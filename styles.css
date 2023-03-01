@@ -1,5 +1,7 @@
 :root {
     --padding: 3rem;
+    --primary-color: #ee0000;
+    --shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
 }
 
 @font-face {
@@ -65,6 +67,7 @@ h2 {
     text-align: center;
     color: white;
     padding: 0 1rem;
+    font-size: 10px;
 }
 
 .main {
@@ -82,29 +85,76 @@ h2 {
 }
 
 .form {
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow);
     background-color: #fff;
     padding: 1rem var(--padding);
+    margin: 2rem 0 1.5rem;
 }
 
 .form-row {
     display: flex;
+    margin-bottom: 1rem;
+    gap: 4rem;
 }
 
 .btn {
     margin: 0 var(--padding);
+    padding: .8rem 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+    transition: .2s ease-in;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ee0000cb;
+    box-shadow: none;
+    transform: translateY(1px);
 }
 
 label {
     display: block;
+    font-size: .8rem;
+    letter-spacing: 1px;
 }
+
+input {
+    border: 1px solid #E5E7EB; 
+    border-radius: 4px;
+    padding: .4rem;
+    transition: .1s ease-in;
+    outline: transparent;
+}
+
+input:focus {
+    box-shadow: var(--shadow);
+    transform: translateY(-1px);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:placeholder-shown {
+    border-color: #E5E7EB;
+}
+
 
 .log-in {
     padding: 0 var(--padding);
 }
 
 .log-in a {
-    color: #ee0000;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
