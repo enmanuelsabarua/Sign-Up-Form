@@ -158,3 +158,14 @@ input:placeholder-shown {
     text-decoration: none;
     font-weight: bold;
 }
+
+.form-row .error {
+    border-color: red;
+}
+
+.form-row .error::after {
+    content: '* Password do not match';
+    color: red;
+    display: block;
+    font-size: 10px;
+}
