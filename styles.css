@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Dash Horizon";
+    src: url(./fonts/Dashhorizon-eZ5wg.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Golos Text', sans-serif;;
+    background-color: #f9fafb;
+}
+
+img {
+    width: min(90%, 200px);
+}
+
+a {
+    color: white;
+}
+
+.logo {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    font-size: 4rem;
+    flex: 1;
+    margin-top: 200px;
+}
+
+.text-logo {
+    color: white;
+    font-family: "Dash Horizon", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.bg-img {
+    background-image: url(./img/formula1bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
